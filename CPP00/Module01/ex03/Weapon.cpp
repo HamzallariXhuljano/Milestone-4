@@ -1,0 +1,33 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Weapon.cpp                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: xhamzall <xhamzall@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/09/23 16:11:25 by xhamzall          #+#    #+#             */
+/*   Updated: 2025/09/23 18:25:54 by xhamzall         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "Weapon.hpp"
+
+Weapon::Weapon()
+{
+	
+}
+
+Weapon::~Weapon()
+{
+
+}
+
+const std::string &Weapon::getType() const
+{
+	return this->type;
+}
+
+void Weapon::setType(std::string type)
+{
+	this->type = type;
+}
