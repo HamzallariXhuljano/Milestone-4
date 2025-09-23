@@ -6,11 +6,11 @@
 #    By: xhamzall <xhamzall@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/09/18 16:26:45 by xhamzall          #+#    #+#              #
-#    Updated: 2025/09/22 16:45:30 by xhamzall         ###   ########.fr        #
+#    Updated: 2025/09/23 12:50:47 by xhamzall         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = log
+NAME = walkingdead
 
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
