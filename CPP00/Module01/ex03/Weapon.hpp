@@ -6,7 +6,7 @@
 /*   By: xhamzall <xhamzall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/23 16:11:14 by xhamzall          #+#    #+#             */
-/*   Updated: 2025/09/23 18:26:02 by xhamzall         ###   ########.fr       */
+/*   Updated: 2025/09/25 14:30:43 by xhamzall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ class Weapon {
 		std::string type;
 
 	public:
-		Weapon();
+		Weapon(std::string);
 		~Weapon();
 		const std::string &getType() const;
 		void setType(std::string);

@@ -6,15 +6,15 @@
 /*   By: xhamzall <xhamzall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/23 16:11:25 by xhamzall          #+#    #+#             */
-/*   Updated: 2025/09/23 18:25:54 by xhamzall         ###   ########.fr       */
+/*   Updated: 2025/09/25 14:31:12 by xhamzall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Weapon.hpp"
 
-Weapon::Weapon()
+Weapon::Weapon(std::string type)
 {
-	
+	this->type = type;
 }
 
 Weapon::~Weapon()

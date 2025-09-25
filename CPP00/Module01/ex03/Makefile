@@ -6,11 +6,11 @@
 #    By: xhamzall <xhamzall@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/09/23 15:43:04 by xhamzall          #+#    #+#              #
-#    Updated: 2025/09/23 15:43:54 by xhamzall         ###   ########.fr        #
+#    Updated: 2025/09/25 14:35:26 by xhamzall         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = brain
+NAME = weapon
 
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
