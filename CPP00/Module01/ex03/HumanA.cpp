@@ -6,7 +6,7 @@
 /*   By: xhamzall <xhamzall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/23 16:15:39 by xhamzall          #+#    #+#             */
-/*   Updated: 2025/09/25 14:14:15 by xhamzall         ###   ########.fr       */
+/*   Updated: 2025/09/25 17:16:39 by xhamzall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ HumanA::HumanA(std::string name, Weapon &other):weapon(other)
 
 HumanA::~HumanA()
 {
-
+	
 }
 
 
