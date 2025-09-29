@@ -6,7 +6,7 @@
 /*   By: xhamzall <xhamzall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/26 18:23:11 by xhamzall          #+#    #+#             */
-/*   Updated: 2025/09/29 18:15:09 by xhamzall         ###   ########.fr       */
+/*   Updated: 2025/09/29 18:57:43 by xhamzall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,4 +47,14 @@ int Fixed::getRawBits(void) const
 void Fixed::setRawBits(int const raw)
 {
 	this->int_num = raw;
+}
+
+float Fixed::toFloat(void) const
+{
+
+}
+
+int Fixed::toInt(void) const
+{
+
 }
