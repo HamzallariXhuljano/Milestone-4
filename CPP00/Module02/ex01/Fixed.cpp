@@ -6,7 +6,7 @@
 /*   By: xhamzall <xhamzall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/26 18:23:11 by xhamzall          #+#    #+#             */
-/*   Updated: 2025/09/29 19:19:18 by xhamzall         ###   ########.fr       */
+/*   Updated: 2025/09/30 15:06:15 by xhamzall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,13 @@ Fixed::Fixed()
 
 Fixed::Fixed(const int int_param)
 {
+	std::cout<<"Int constructor called"<<std::endl;
 	this->int_num = int_param << bit_num;
 }
 
 Fixed::Fixed(const float float_parm)
 {
+	std::cout<<"Float constructor called"<<std::endl;
 	this->int_num = roundf(float_parm * (1 << bit_num));
 }
 
