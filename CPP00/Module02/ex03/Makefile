@@ -6,11 +6,11 @@
 #    By: xhamzall <xhamzall@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/09/26 18:22:45 by xhamzall          #+#    #+#              #
-#    Updated: 2025/10/01 14:53:50 by xhamzall         ###   ########.fr        #
+#    Updated: 2025/10/01 17:53:17 by xhamzall         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = fixed
+NAME = point
 
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
