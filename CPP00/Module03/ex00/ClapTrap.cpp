@@ -6,7 +6,7 @@
 /*   By: xhamzall <xhamzall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 18:26:39 by xhamzall          #+#    #+#             */
-/*   Updated: 2025/10/01 19:31:27 by xhamzall         ###   ########.fr       */
+/*   Updated: 2025/10/01 19:42:49 by xhamzall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ void ClapTrap::attack(const std::string &target)
 	if (this->energyPoints  < 1)
 		std::cout<<"ClpaTrap "<< this->name<< " don't have energy to attack :("<<std::endl;
 	else if (this->hitPoints < 1)
-		std::cout<<"Oh no ClpaTrap "<<this->name<< " is died:("<<std::endl;
+		std::cout<<"Oh no ClpaTrap "<<this->name<< " he cannot attack becauseeee is died:("<<std::endl;
 	else
 	{
 		this->energyPoints--;

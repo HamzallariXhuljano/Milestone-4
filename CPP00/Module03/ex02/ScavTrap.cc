@@ -6,7 +6,7 @@
 /*   By: xhamzall <xhamzall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/02 19:09:32 by xhamzall          #+#    #+#             */
-/*   Updated: 2025/10/02 20:44:00 by xhamzall         ###   ########.fr       */
+/*   Updated: 2025/10/02 19:32:09 by xhamzall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ ScavTrap:: ScavTrap(std::string name) : ClapTrap(name)
 	this->hitPoints = 100;
 	this->energyPoints = 50;
 	this->attackDamage = 20;
-	std::cout<<"Costructor with name ScavTrap called"<<std::endl;
+	std::cout<<"Costructor of ScavTrap called"<<std::endl;
 }
 
 ScavTrap::ScavTrap(const ScavTrap &obj) : ClapTrap(obj)

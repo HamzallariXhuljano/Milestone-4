@@ -6,7 +6,7 @@
 /*   By: xhamzall <xhamzall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 18:20:24 by xhamzall          #+#    #+#             */
-/*   Updated: 2025/10/02 19:32:27 by xhamzall         ###   ########.fr       */
+/*   Updated: 2025/10/02 20:19:35 by xhamzall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 int main()
 {
 	ScavTrap thilina("Chamber");
-
  	thilina.attack("Enemy");
 	// thilina.attack("Enemy");
 	// thilina.attack("Enemy");
