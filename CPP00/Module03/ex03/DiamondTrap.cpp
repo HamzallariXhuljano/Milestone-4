@@ -6,7 +6,7 @@
 /*   By: xhamzall <xhamzall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 15:24:59 by xhamzall          #+#    #+#             */
-/*   Updated: 2025/10/06 17:22:52 by xhamzall         ###   ########.fr       */
+/*   Updated: 2025/10/06 17:29:26 by xhamzall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,8 @@ DiamondTrap::DiamondTrap(std::string name) : ClapTrap(name + "_clap_name")
 	std::cout<<"Name costructor DiamondTrap called :)"<<std::endl;
 }
 
-DiamondTrap::DiamondTrap(const DiamondTrap &obj) : ClapTrap(obj){
+DiamondTrap::DiamondTrap(const DiamondTrap &obj) : ClapTrap(obj)
+{
 	this->operator= (obj);
 	std::cout<<"Copy Custractor DiamondTrap called"<<std::endl;
 }

@@ -6,7 +6,7 @@
 /*   By: xhamzall <xhamzall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/02 17:48:45 by xhamzall          #+#    #+#             */
-/*   Updated: 2025/10/06 17:06:49 by xhamzall         ###   ########.fr       */
+/*   Updated: 2025/10/06 17:27:28 by xhamzall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 #include "ClapTrap.hpp"
 
-class ScavTrap : public virtual ClapTrap
+class ScavTrap : virtual public  ClapTrap
 {
 	private:
 
