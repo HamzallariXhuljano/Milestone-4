@@ -6,11 +6,15 @@
 /*   By: xhamzall <xhamzall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/02 20:48:27 by xhamzall          #+#    #+#             */
-/*   Updated: 2025/10/02 21:00:23 by xhamzall         ###   ########.fr       */
+/*   Updated: 2025/10/06 17:02:27 by xhamzall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+# ifndef FRAGTRAP_HPP
+#define FRAGTRAP_HPP
+
 #include "ClapTrap.hpp"
+#include "ScavTrap.hpp"
 
 class FragTrap : public ClapTrap
 {
@@ -25,3 +29,5 @@ class FragTrap : public ClapTrap
 	void highFivesGuys(void);
 
 };
+
+# endif
