@@ -1,50 +1,50 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Animal.cpp                                         :+:      :+:    :+:   */
+/*   AAnimal.cpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: xhamzall <xhamzall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 19:36:20 by xhamzall          #+#    #+#             */
-/*   Updated: 2025/10/08 15:25:04 by xhamzall         ###   ########.fr       */
+/*   Updated: 2025/10/08 18:57:28 by xhamzall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Animal.hpp"
+#include "AAnimal.hpp"
 
-Animal::Animal() : type("Animal")
+AAnimal::AAnimal() : type("Animal")
 {
 	std::cout << "An animal is created" << std::endl;
 }
 
-Animal::Animal(std::string type) : type(type)
+AAnimal::AAnimal(std::string type) : type(type)
 {
 	std::cout << "An animal of type " << type << " is created" << std::endl;
 }
 
-Animal::Animal(const Animal &obj)
+AAnimal::AAnimal(const AAnimal &obj)
 {
 	this->operator= (obj);
 }
 
-Animal& Animal::operator=(const Animal &obj)
+AAnimal& AAnimal::operator=(const AAnimal &obj)
 {
 	if (this != &obj)
 		this->type = obj.type;
 	return *this;
 }
 
-Animal::~Animal()
+AAnimal::~AAnimal()
 {
 	std::cout << "An animal is destroyed" << std::endl;
 }
 
-void Animal::makeSound() const
+void AAnimal::makeSound() const
 {
 	std::cout << "Animals make strange sound..." << std::endl;
 }
 
-std::string Animal::getType() const
+std::string AAnimal::getType() const
 {
 	return this->type;
 }

@@ -1,33 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Cat.hpp                                            :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: xhamzall <xhamzall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/06 18:28:42 by xhamzall          #+#    #+#             */
-/*   Updated: 2025/10/08 14:29:43 by xhamzall         ###   ########.fr       */
+/*   Created: 2025/10/06 19:38:35 by xhamzall          #+#    #+#             */
+/*   Updated: 2025/10/08 18:55:04 by xhamzall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# ifndef CAT_HPP
-#define CAT_HPP
-
-#include <iostream>
-#include <string>
 #include "Animal.hpp"
+#include "Cat.hpp"
+#include "Dog.hpp"
 
-class Cat : public Animal
+int main()
 {
+	int size = 10;
+	const Animal *animals[size];
 
-	public:
-		Cat();
-		Cat(std::string);
-		Cat(const Cat&);
-		Cat& operator=(const Cat&);
-		~Cat();
-		void makeSound() const;
-};
-
-
-# endif
+	for (int i = 0; i<size; i++)
+	{
+		if (i % 2 == 0)
+			animals[i] = new Dog();
+		else
+			animals[i] = new Cat();
+	}
+	for (int i = 0; i < size; i++)
+		delete animals[i];
+	return 0;
+}
