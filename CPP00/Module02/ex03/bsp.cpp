@@ -6,7 +6,7 @@
 /*   By: xhamzall <xhamzall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 15:09:36 by xhamzall          #+#    #+#             */
-/*   Updated: 2025/10/01 17:42:28 by xhamzall         ###   ########.fr       */
+/*   Updated: 2025/10/22 17:23:33 by xhamzall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,8 @@ bool bsp(Point const a, Point const b, Point const c, Point const point)
 	std::cout<<"areaPAB "<<areaPAB<<std::endl;
 	float areaABC = area(a, b, c);
 	std::cout<<"areaABC "<<areaABC<<std::endl;
+	if (areaPAB == 0 || areaPBC == 0 || areaPAC == 0)
+		return false;
 	if (areaABC == (areaPAC + areaPBC + areaPAB))
 		return true;
 	return false;
