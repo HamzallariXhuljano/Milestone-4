@@ -6,13 +6,20 @@
 /*   By: xhamzall <xhamzall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 18:26:39 by xhamzall          #+#    #+#             */
-/*   Updated: 2025/10/02 20:43:15 by xhamzall         ###   ########.fr       */
+/*   Updated: 2025/10/23 15:52:55 by xhamzall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
 
-ClapTrap::ClapTrap() { std::cout<<"Default costructor ClapTrap called"<<std::endl;}
+ClapTrap::ClapTrap()
+{
+	this->name = " no name";
+	this->hitPoints = 10;
+	this->energyPoints = 10;
+	this->attackDamage = 0;
+	std::cout<<"Default costructor called"<<std::endl;
+}
 
 ClapTrap::ClapTrap(std::string name)
 {
@@ -20,13 +27,13 @@ ClapTrap::ClapTrap(std::string name)
 	this->hitPoints = 10;
 	this->energyPoints = 10;
 	this->attackDamage = 0;
-	std::cout<<"Costructor ClapTrap with name called"<<std::endl;
+	std::cout<<"Costructor with name called"<<std::endl;
 }
 
 ClapTrap::ClapTrap(const ClapTrap &obj)
 {
 	this->operator = (obj);
-	std::cout<<"Copy costructor ClapTrap called"<<std::endl;
+	std::cout<<"Copy costructor called"<<std::endl;
 }
 
 ClapTrap& ClapTrap::operator=(const ClapTrap &obj)
@@ -35,13 +42,13 @@ ClapTrap& ClapTrap::operator=(const ClapTrap &obj)
 	{
 		this->attackDamage = obj.attackDamage;
 		this->energyPoints = obj.energyPoints;
-		this->hitPoints = obj.energyPoints;
+		this->hitPoints = obj.hitPoints;
 		this->name = obj.name;
 	}
 	return *this;
 }
 
-ClapTrap::~ClapTrap() {std::cout<<"Destructor ClapTrap called"<<std::endl;}
+ClapTrap::~ClapTrap() {std::cout<<"Destructor called"<<std::endl;}
 
 void ClapTrap::attack(const std::string &target)
 {
@@ -58,10 +65,11 @@ void ClapTrap::attack(const std::string &target)
 
 void ClapTrap::takeDamage(unsigned int amount)
 {
-
-	if (hitPoints <= amount)
+	if (this->hitPoints == 0)
+		std::cout << "opsss your ClapTrap " << this->name << " is already dead!" << std::endl;
+	else if (amount >= this->hitPoints)
 	{
-		this->hitPoints -= amount;
+		this->hitPoints = 0;
 		std::cout<<"opsss your ClapTrap "<<this->name <<" died. Unlucky!"<<std::endl;
 	}
 	else
