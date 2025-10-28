@@ -6,7 +6,7 @@
 /*   By: xhamzall <xhamzall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/08 15:28:10 by xhamzall          #+#    #+#             */
-/*   Updated: 2025/10/08 18:18:33 by xhamzall         ###   ########.fr       */
+/*   Updated: 2025/10/28 14:34:30 by xhamzall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,8 @@ class Brain
 		Brain(const Brain&);
 		Brain& operator=(const Brain&);
 		~Brain();
+		void setIdea(int, std::string);
+		std::string getIdea(int);
 };
 
 #endif

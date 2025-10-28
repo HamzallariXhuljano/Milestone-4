@@ -6,7 +6,7 @@
 /*   By: xhamzall <xhamzall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 19:38:35 by xhamzall          #+#    #+#             */
-/*   Updated: 2025/10/24 16:14:40 by xhamzall         ###   ########.fr       */
+/*   Updated: 2025/10/27 18:23:34 by xhamzall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 int main()
 {
 	int size = 10;
-	const Animal *animals[size];
+	Animal *animals[size];
 	std::cout << "====== Testing type Animol ======" << std::endl;
 	for (int i = 0; i<size; i++)
 	{
@@ -33,6 +33,15 @@ int main()
 	{
 		animals[i]->makeSound();
 	}
+	std::cout << "====== Testing Brain Animol ======" << std::endl;
+	Cat *c = dynamic_cast <Cat*>(animals[1]);
+	if (c)
+	{
+		c->setCatIdea(1, "popopopopop");
+	}
+	Cat copyC = *c;
+	std::cout<<"Original cat idea "<<c->getCatIdea(1);
+	std::cout<<"Copy cat idea "<< copyC.getCatIdea(1)<<std::endl;
 	std::cout << "====== Testing distructor Animol ======" << std::endl;
 
 	for (int i = 0; i < size; i++)

@@ -6,7 +6,7 @@
 /*   By: xhamzall <xhamzall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 18:28:42 by xhamzall          #+#    #+#             */
-/*   Updated: 2025/10/08 15:43:56 by xhamzall         ###   ########.fr       */
+/*   Updated: 2025/10/27 17:49:46 by xhamzall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,8 @@ class Cat : public Animal
 		Cat& operator=(const Cat&);
 		~Cat();
 		void makeSound() const;
+		void setCatIdea(int, std::string);
+		std::string getCatIdea(int);
 };
 
 

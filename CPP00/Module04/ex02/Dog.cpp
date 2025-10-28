@@ -6,7 +6,7 @@
 /*   By: xhamzall <xhamzall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 19:41:38 by xhamzall          #+#    #+#             */
-/*   Updated: 2025/10/08 18:21:24 by xhamzall         ###   ########.fr       */
+/*   Updated: 2025/10/28 14:36:23 by xhamzall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,4 +48,12 @@ void Dog::makeSound() const
 	std::cout << "Bau bau bau! What did you mean with bau?" << std::endl;
 }
 
+void Dog::setDogIdea(int idx, std::string idea)
+{
+	this->brain->setIdea(idx, idea);
+}
 
+std::string Dog::getDogIdea(int idx)
+{
+	return this->brain->getIdea(idx);
+}

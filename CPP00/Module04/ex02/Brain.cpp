@@ -6,7 +6,7 @@
 /*   By: xhamzall <xhamzall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/08 15:31:52 by xhamzall          #+#    #+#             */
-/*   Updated: 2025/10/08 16:33:51 by xhamzall         ###   ########.fr       */
+/*   Updated: 2025/10/28 14:34:17 by xhamzall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,5 +35,14 @@ Brain& Brain::operator=(const Brain &obj)
 	}
 	return *this;
 }
+void Brain::setIdea(int idx, std::string idea)
+{
+	this->ideas[idx] = idea;
+}
 
-Brain::~Brain() {std::cout<<"Destructor calls"<<std::endl;}
+std::string Brain::getIdea(int indx)
+{
+	return this->ideas[indx];
+}
+
+Brain::~Brain() {std::cout<<"Destructor Brain called"<<std::endl;}

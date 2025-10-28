@@ -6,7 +6,7 @@
 /*   By: xhamzall <xhamzall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 19:30:52 by xhamzall          #+#    #+#             */
-/*   Updated: 2025/10/08 18:21:12 by xhamzall         ###   ########.fr       */
+/*   Updated: 2025/10/28 14:35:39 by xhamzall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,8 @@ class Dog : public AAnimal
 		Dog& operator=(const Dog&);
 		~Dog();
 		void makeSound() const;
+		void setDogIdea(int, std::string);
+		std::string getDogIdea(int);
 };
 
 #endif
